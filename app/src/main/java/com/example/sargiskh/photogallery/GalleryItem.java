@@ -11,12 +11,6 @@ public class GalleryItem {
     private String mUrl;
 
 
-
-    @Override
-    public String toString() {
-        return mCaption;
-    }
-
     public void setCaption(String mCaption) {
         this.mCaption = mCaption;
     }
@@ -27,5 +21,14 @@ public class GalleryItem {
 
     public void setUrl(String mUrl) {
         this.mUrl = mUrl;
+    }
+
+    public String getUrl() {
+        return mUrl;
+    }
+
+    @Override
+    public String toString() {
+        return mCaption;
     }
 }
